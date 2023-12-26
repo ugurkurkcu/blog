@@ -66,10 +66,13 @@ header {
   color: #fff;
   text-transform: uppercase;
 }
+#menu_bar {
+  display: none;
+}
 
-/* anasayfa */
+/* home */
 
-.inner_anasayfa {
+.inner_home {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -77,17 +80,17 @@ header {
   width: 80%;
   color: #fff;
 }
-.child_anasayfa {
+.child_home {
   flex-basis: 45%;
 }
-.child_anasayfa h1 {
+.child_home h1 {
   font-size: 50px;
   color: #24caac;
 }
 .span_child {
   color: #ca247a;
 }
-.child_anasayfa p {
+.child_home p {
   font-size: 25px;
   margin-bottom: 12px;
 }
@@ -109,6 +112,7 @@ header {
 
 .innersoftware {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   width: 80%;
@@ -183,15 +187,16 @@ header {
   margin: 0 auto;
 }
 .child_achivement {
-  flex-basis: 48%;
+  flex-basis: 46%;
 }
 .child_achivement img {
-  /* height: 100%;
-    width: 100%; */
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
   object-fit: cover;
 }
 .child_achivement-2 {
-  flex-basis: 48%;
+  flex-basis: 46%;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -255,4 +260,124 @@ header {
 }
 .child_about a:hover {
   text-shadow: 0 0 10px #caca24;
+}
+
+/* iletisim */
+.inner_contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  flex-wrap: wrap;
+  color: #fff;
+}
+.child_contact {
+  flex-basis: 48%;
+}
+.child_contact img {
+  border-radius: 5px;
+  
+}
+.child_contact form {
+  background-color: #2f363e;
+  padding: 50px 40px;
+  border-radius: 5px;
+}
+.child_contact form input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #24292d;
+  border: none;
+  resize: none;
+  border-radius: 25px;
+  transition: all 0.3s ease-in;
+}
+.child_contact form input,
+textarea:focus {
+  color: #fff;
+}
+.child_contact form input:focus {
+  letter-spacing: 1px;
+}
+.child_contact form textarea:focus {
+  letter-spacing: 1px;
+}
+.child_contact form input:last-child {
+  margin-bottom: 0;
+  background-color: #24caac;
+  border: 1px solid #24caac;
+  transition: 0.3s;
+}
+.child_contact form input:last-child:hover {
+  background: transparent;
+  color: #fff;
+}
+
+/* footer */
+
+footer {
+  background: #24292d;
+  padding: 60px 0 20px 0;
+  color: #fff;
+}
+.inner_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  width: 80%;
+}
+.child_footer {
+  flex-basis: 24%;
+}
+.child_footer h3 {
+  margin-bottom: 20px;
+}
+.child_footer .footer_social {
+  display: flex;
+  justify-content: start;
+  margin-top: 10px;
+}
+.child_footer ul li {
+  flex-basis: 15%;
+}
+.child_footer ul li a {
+  color: #fff;
+}
+.quick_links {
+  display: flex;
+  flex-direction: column;
+}
+.quick_links li a:hover {
+  text-decoration: underline;
+}
+.footer_contact li i {
+  margin-right: 5px;
+}
+.child_footer form {
+  display: flex;
+  flex-direction: column;
+}
+.child_footer form input {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  background: #2f363e;
+  border: none;
+}
+.child_footer form input:focus {
+  color: #fff;
+}
+.child_footer form input:last-child {
+  background: #24caac;
+  margin: 0;
+  border: 1px solid #24caac;
+}
+.child_footer form input:last-child:hover {
+  background: transparent;
+  transition: 0.3s;
 }

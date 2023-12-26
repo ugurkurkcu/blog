@@ -15,6 +15,8 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css">
   </head>
   <body>
     <!-- header -->
@@ -24,20 +26,23 @@
           <h2><a href="#">Uğur Kürkçü</a></h2>
         </div>
         <ul class="nav_links">
-          <li><a href="#anasayfa">Anasayfa</a></li>
+          <li><a href="#home">Anasayfa</a></li>
           <li><a href="#yazilimlar">Yazilimlar</a></li>
           <li><a href="#sertifikalar">Sertifikalar</a></li>
           <li><a href="#basarilar">Basarilar</a></li>
-          <li><a href="#hakkimizda">Hakkimda</a></li>
+          <li><a href="#hakkimda">Hakkimda</a></li>
           <li><a href="#iletisim">Iletisim</a></li>
         </ul>
+      </div>
+      <div id="menu_bar">
+        <i class="fas fa-bars"></i>
       </div>
     </header>
 
     <!-- anasayfa -->
-    <section id="anasayfa">
-      <div class="inner_anasayfa">
-        <div class="child_anasayfa">
+    <section id="home">
+      <div class="inner_home">
+        <div class="child_home">
           <h1>
             WEB SITEYE MI IHTIYACIN VAR ? <br />
             <span class="span_child">NE BEKLIYORSUN</span>
@@ -45,7 +50,7 @@
           <p>Kisa surede etkili tasarimlar icin</p>
           <button class="btn">Mesaj At</button>
         </div>
-        <div class="child_anasayfa">
+        <div class="child_home">
           <img src="img/home-imgr.png" alt="" />
         </div>
       </div>
@@ -246,5 +251,101 @@
         </div>
       </div>
     </section>
+
+    <!-- iletisim -->
+    <section id="iletisim">
+      <div class="section_title">
+        <h2>Iletisime Gec</h2>
+      </div>
+      <div class="inner_contact">
+        <div class="child_contact">
+          <img src="img/contactt.png" alt="contact" />
+        </div>
+        <div class="child_contact">
+          <form class="form_contact">
+            <input
+              type="text"
+              placeholder="Isim"
+              class="inp_contact"
+              name="fullname"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              class="inp_contact"
+              name="fullname"
+            />
+            <input
+              type="tel"
+              placeholder="Tel"
+              class="inp_contact"
+              name="fullname"
+            />
+            <textarea
+              name=""
+              placeholder="Not"
+              cols="30"
+              rows="10"
+              name="message"
+            ></textarea>
+            <!-- <button class="button btn">Gonder</button> -->
+            <input type="submit" class="button btn" value="Gonder" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="inner_footer">
+        <div class="child_footer">
+          <h3>Hakkimda</h3>
+          <p>Anadolu Universitesi YBS Mezunuyum</p>
+          <ul class="footer_social">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="child_footer">
+          <h3>Linkler</h3>
+          <ul class="quick_links">
+            <li><a href="#home">Anasayfa</a></li>
+            <li><a href="#yazilimlar">Yazilimlar</a></li>
+            <li><a href="#setifikalar">Sertifikalarim</a></li>
+            <li><a href="#projelerim">Projelerim</a></li>
+            <li><a href="#iletisim">iletisim</a></li>
+          </ul>
+        </div>
+        <div class="child_footer">
+          <h3>Iletisim</h3>
+          <ul class="footer_contact">
+            <li><i class="fas fa-map-marked"></i> AYDIN, Efeler</li>
+            <li><i class="fas fa-phone"></i>12345678</li>
+            <li><i class="fas fa-envelope"></i>uurkurkcu@gmail.com</li>
+          </ul>
+        </div>
+        <div class="child_footer">
+          <h3>HABERLERE HIZLI ULAS</h3>
+          <ul class="footer_contact">
+            <form action="#">
+              <input type="email" placeholder="email" />
+              <input type="submit" value="GONDER" class="btn button"/>
+            </form>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
